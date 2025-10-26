@@ -1,0 +1,13 @@
+# default dark mode 
+dark-mode: true
+architect: true
+auto-accept-architect: false
+attribute-commit-message-author: true
+chat-mode: ask
+auto-test: true
+test-cmd: "dotnet test"
+read: 
+  - ~/.config/AIDER-RULES.md
+  - ARCHITECTURE.md
+  - CONVENTIONS.md
+
