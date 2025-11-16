@@ -4,13 +4,9 @@ zoxide = "latest"
 zellij = "latest"
 yazi = "latest"
 lazygit = "latest"
-nushell = "latest"
 opencode = "latest"
 ripgrep = "latest"
 jq = "latest"
 
 [settings]
-experimental = true
-
-[env]
-PATH = "{{ tool_bin_paths }}"
+experimental = true# Sun Nov 16 10:43:24 AM CET 2025
