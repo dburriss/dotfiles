@@ -1,0 +1,5 @@
+[data]
+  hostname = "{{ .chezmoi.hostname }}"
+  os = "{{ .chezmoi.os }}"
+  kernel = "{{ (output "uname" "-s") | trim }}"
+  distro = "{{ (output "sh" "-c" "source /etc/os-release 2>/dev/null; echo ${ID:-unknown}") | trim }}"

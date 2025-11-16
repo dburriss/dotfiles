@@ -1,0 +1,20 @@
+{{ $host := (readFile "~/.local/state/chezmoi/host-kind") | trim }}
+
+# mise init
+eval "$(mise activate zsh)"
+
+# Common config
+export EDITOR="nvim"
+
+# Host overrides
+case "{{$host}}" in
+  omarchy)
+    source ~/.config/shell/omarchy.sh
+    ;;
+  arch|fedora|debian)
+    source ~/.config/shell/linux.sh
+    ;;
+  macos)
+    source ~/.config/shell/macos.sh
+    ;;
+esac

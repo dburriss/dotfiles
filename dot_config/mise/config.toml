@@ -1,0 +1,16 @@
+[tools]
+lsd = "latest"
+zoxide = "latest"
+zellij = "latest"
+yazi = "latest"
+lazygit = "latest"
+nushell = "latest"
+opencode = "latest"
+ripgrep = "latest"
+jq = "latest"
+
+[settings]
+experimental = true
+
+[env]
+PATH = "{{ tool_bin_paths }}"
