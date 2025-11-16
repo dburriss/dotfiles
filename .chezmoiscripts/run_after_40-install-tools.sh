@@ -25,6 +25,3 @@ echo "[hook] Regenerating mise shims"
 mise reshim
 
 echo "[hook] Finished mise tool sync"
-# 1763286038
-# 1763286056
-# 1763286082
