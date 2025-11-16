@@ -1,4 +1,5 @@
-# Chezmoi
+# Chezmoi.chezmoiscripts/
+If a directory called .chezmoiscripts/ exists in the root of the source directory, then any scripts in it are executed as normal scripts without creating a corresponding directory in the target state. The run_ attribute is still required.
 
 Chezmoi lifecycle scripts are special scripts that you place in your ChezMoi source directory to be executed automatically during the `chezmoi apply` process, which updates your dotfiles across machines. These scripts have predefined filename prefixes that determine when and how often they are run:
 
@@ -18,6 +19,10 @@ Important details about lifecycle scripts in ChezMoi:
 - You can clear the execution state of `run_onchange_` and `run_once_` scripts using `chezmoi state delete-bucket` commands if you want to force re-execution.
 
 This lifecycle scripting mechanism in ChezMoi allows automating custom setup steps, package installations, and other configuration tasks during dotfile management in a controlled and efficient manner.[1][2][3]
+
+## .chezmoiscripts/
+If a directory called .chezmoiscripts/ exists in the root of the source directory, then any scripts in it are executed as normal scripts without creating a corresponding directory in the target state. The run_ attribute is still required.
+
 
 [1](https://www.chezmoi.io/user-guide/use-scripts-to-perform-actions/)
 [2](https://chezmoi.io/user-guide/use-scripts-to-perform-actions/)
