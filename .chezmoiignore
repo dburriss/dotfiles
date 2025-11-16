@@ -1,0 +1,6 @@
+*.md
+knowledge/
+knowledge/**
+private_dot_config/
+private_dot_config/**
+
